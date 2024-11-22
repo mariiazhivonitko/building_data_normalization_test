@@ -1,0 +1,47 @@
+{
+    "http://example.org/building#ConferenceRoomA_Lighting": {
+        "https://brickschema.org/schema/1.1/Brick#Lighting_System": "No rdf:type relationships found",
+        "http://example.org/building#CeilingLight1": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Light_Fixture"
+            ]
+        ],
+        "http://example.org/building#CeilingLight2": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Light_Fixture"
+            ]
+        ]
+    },
+    "http://example.org/building#CeilingLight1": {
+        "https://brickschema.org/schema/1.1/Brick#Light_Fixture": "No rdf:type relationships found"
+    },
+    "http://example.org/building#SecondFloor": {
+        "https://brickschema.org/schema/1.1/Brick#Floor": "No rdf:type relationships found",
+        "http://example.org/building#ServerRoom": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Room"
+            ]
+        ]
+    },
+    "http://example.org/building#Office101_Lighting": {
+        "https://brickschema.org/schema/1.1/Brick#Lighting_System": "No rdf:type relationships found",
+        "http://example.org/building#DeskLight1": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Light_Fixture"
+            ]
+        ]
+    },
+    "http://example.org/building#ServerRoom": {
+        "https://brickschema.org/schema/1.1/Brick#Room": "No rdf:type relationships found",
+        "http://example.org/building#ServerRoom_Cooling": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Cooling_System"
+            ]
+        ]
+    }
+}

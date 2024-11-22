@@ -1,0 +1,11 @@
+@prefix brick: <https://brickschema.org/schema/1.1/BRICK#> .
+@prefix ex: <http://example.org/building#> .
+
+ex:AHU1 a brick:AirHandlingUnit ;
+       brick:feeds ex:Room1 ;
+       brick:hasPoint ex:AHU1_AirflowSetpoint .
+
+ex:Room1 a brick:Room ;
+        brick:hasPoint ex:Room1_TemperatureSensor .
+
+ex:Room1_TemperatureSensor a brick:TemperatureSensor .

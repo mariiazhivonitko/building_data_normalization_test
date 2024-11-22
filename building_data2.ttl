@@ -1,0 +1,52 @@
+@prefix brick: <https://brickschema.org/schema/1.1/Brick#> .
+@prefix ex: <http://example.org/building#> .
+
+# Define the building
+ex:MainOfficeBuilding a brick:Building ;
+    brick:contains ex:FirstFloor, ex:SecondFloor .
+
+# Define the first floor
+ex:FirstFloor a brick:Floor ;
+    brick:contains ex:ConferenceRoomA, ex:Office101 .
+
+# Define a conference room on the first floor
+ex:ConferenceRoomA a brick:Room ;
+    brick:contains ex:ConferenceRoomA_Lighting, ex:ConferenceRoomA_HVAC .
+
+# Define the lighting system for Conference Room A
+ex:ConferenceRoomA_Lighting a brick:Lighting_System ;
+    brick:controls ex:CeilingLight1, ex:CeilingLight2 .
+
+ex:CeilingLight1 a brick:Light_Fixture .
+ex:CeilingLight2 a brick:Light_Fixture .
+
+# Define the HVAC system for Conference Room A
+ex:ConferenceRoomA_HVAC a brick:HVAC_Zone ;
+    brick:hasPoint ex:TempSensor_A, ex:Thermostat_A .
+
+ex:TempSensor_A a brick:Temperature_Sensor .
+ex:Thermostat_A a brick:Thermostat .
+
+# Define an office on the first floor
+ex:Office101 a brick:Room ;
+    brick:contains ex:Office101_Lighting .
+
+# Define the lighting system for Office 101
+ex:Office101_Lighting a brick:Lighting_System ;
+    brick:controls ex:DeskLight1 .
+
+ex:DeskLight1 a brick:Light_Fixture .
+
+# Define the second floor
+ex:SecondFloor a brick:Floor ;
+    brick:contains ex:ServerRoom .
+
+# Define a server room on the second floor
+ex:ServerRoom a brick:Room ;
+    brick:contains ex:ServerRoom_Cooling .
+
+# Define the cooling system for the server room
+ex:ServerRoom_Cooling a brick:Cooling_System ;
+    brick:hasPoint ex:ServerRoom_TempSensor .
+
+ex:ServerRoom_TempSensor a brick:Temperature_Sensor .
