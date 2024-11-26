@@ -1,16 +1,4 @@
 {
-    "http://example.org/building#Office101_Lighting": {
-        "https://brickschema.org/schema/1.1/Brick#Lighting_System": [],
-        "http://example.org/building#DeskLight1": [
-            [
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-                "https://brickschema.org/schema/1.1/Brick#Light_Fixture"
-            ]
-        ]
-    },
-    "http://example.org/building#TempSensor_A": {
-        "https://brickschema.org/schema/1.1/Brick#Temperature_Sensor": []
-    },
     "http://example.org/building#MainOfficeBuilding": {
         "https://brickschema.org/schema/1.1/Brick#Building": [],
         "http://example.org/building#FirstFloor": [
@@ -26,10 +14,52 @@
             ]
         ]
     },
-    "http://example.org/building#Thermostat_A": {
-        "https://brickschema.org/schema/1.1/Brick#Thermostat": []
+    "http://example.org/building#Office101": {
+        "https://brickschema.org/schema/1.1/Brick#Room": [],
+        "http://example.org/building#Office101_Lighting": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Lighting_System"
+            ]
+        ]
     },
-    "http://example.org/building#DeskLight1": {
-        "https://brickschema.org/schema/1.1/Brick#Light_Fixture": []
+    "http://example.org/building#ConferenceRoomA_HVAC": {
+        "https://brickschema.org/schema/1.1/Brick#HVAC_Zone": [],
+        "http://example.org/building#TempSensor_A": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Temperature_Sensor"
+            ]
+        ],
+        "http://example.org/building#Thermostat_A": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Thermostat"
+            ]
+        ]
+    },
+    "http://example.org/building#ConferenceRoomA_Lighting": {
+        "https://brickschema.org/schema/1.1/Brick#Lighting_System": [],
+        "http://example.org/building#CeilingLight1": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Light_Fixture"
+            ]
+        ],
+        "http://example.org/building#CeilingLight2": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Light_Fixture"
+            ]
+        ]
+    },
+    "http://example.org/building#ServerRoom": {
+        "https://brickschema.org/schema/1.1/Brick#Room": [],
+        "http://example.org/building#ServerRoom_Cooling": [
+            [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                "https://brickschema.org/schema/1.1/Brick#Cooling_System"
+            ]
+        ]
     }
 }
